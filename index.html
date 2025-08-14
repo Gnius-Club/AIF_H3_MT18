@@ -1,24 +1,300 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Playbook — 3º Preparatoria — Misión M18: Diagnóstico Full-Stack</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
+  <header>
+    <h1><span class="book-icon">📋</span> <strong>Playbook Misión M18: Diagnóstico Full-Stack</strong></h1>
+    <div class="header-widgets">
+      <div class="timer-container">
+        <span id="timer">⏱️ 00:00</span>
+        <button id="startStop">Start</button>
+        <button id="reset">Reset</button>
+      </div>
+      <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle-input">
+          <span class="slider round"></span>
+        </label>
+        <i class="fas fa-moon"></i>
+      </div>
+    </div>
+  </header>
+  <div class="main-container">
+    <aside class="activity-list">
+      <h2>Actividades</h2>
+      <ul>
+        <li><a href="#activity-0">📝</a></li>
+        <li><a href="#activity-1">1</a></li>
+        <li><a href="#activity-2">2</a></li>
+        <li><a href="#activity-3">3</a></li>
+        <li><a href="#activity-4">4</a></li>
+        <li><a href="#activity-5">5</a></li>
+      </ul>
+      <div class="sidebar-info">
+        <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+        <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+      </div>
+    </aside>
+    <main class="content">
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+      <!-- 0) De un Vistazo -->
+      <section class="activity-card" id="activity-0">
+        <h2 class="activity-title">📝 De un Vistazo: Misión M18: Diagnóstico Full-Stack</h2>
+        <p class="activity-purpose">Resumen de objetivos, secuencia y entregables.</p>
+        <div class="overview-table-container">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Objetivos e “I Can”</strong>
+                  <ul>
+                    <li>Puedo diagnosticar bugs en aplicaciones full-stack utilizando herramientas de desarrollador (Network tab).</li>
+                    <li>Puedo identificar la causa raíz de un bug (frontend vs. backend) basándome en la inspección de respuestas de API.</li>
+                  </ul>
+                  <strong>Secuencia y tiempos</strong>
+                  <ol>
+                    <li>Saludo Interactivo con IA — 3 min</li>
+                    <li>“I Can” + Desafío — 5–7 min</li>
+                    <li>AI GYM — 10–12 min</li>
+                    <li>Brain Spark — 17–20 min</li>
+                    <li>GNIUS STORM — 5 min</li>
+                  </ol>
+                  <strong>Entregable del Micro-Proyecto</strong>
+                  <ul>
+                    <li>Un "Informe de Diagnóstico" de una sola oración que localiza el bug con precisión: "El bug está en [componente] porque la API devuelve [dato incorrecto] en lugar de [dato esperado]".</li>
+                  </ul>
+                </td>
+                <td>
+                  <strong>Criterios de calidad (rúbrica exprés)</strong>
+                  <ul>
+                    <li>Claridad en la reproducción del error en la UI.</li>
+                    <li>Uso efectivo de la pestaña Network de DevTools para inspeccionar peticiones y respuestas.</li>
+                    <li>Precisión en la comparación de la respuesta real de la API con la esperada.</li>
+                    <li>Localización exacta del bug (componente: frontend/backend) y justificación basada en la evidencia de la API.</li>
+                  </ul>
+                  <strong>Materiales y preparación</strong>
+                  <ul>
+                    <li>Proyector e internet.</li>
+                    <li>Acceso a una aplicación web con un bug pre-insertado (simulando un problema de frontend/backend/API).</li>
+                    <li>Herramientas de Desarrollador del navegador (DevTools, pestaña Network).</li>
+                    <li>Ejemplo mínimo listo de un diagnóstico de bug.</li>
+                  </ul>
+                  <strong>Preparación Previa para ESTA Sesión:</strong>
+                  <ol>
+                    <li>Tener la aplicación con el bug pre-insertado lista y accesible para los estudiantes.</li>
+                    <li>Familiaridad con la pestaña Network de DevTools y ejemplos claros de respuestas de API correctas e incorrectas.</li>
+                    <li>Asegurar que los estudiantes tienen acceso a un navegador con DevTools.</li>
+                  </ol>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 1) Saludo Interactivo con IA -->
+      <section class="activity-card" id="activity-1">
+        <h2 class="activity-title">Saludo Interactivo con IA</h2>
+        <p class="activity-purpose">Enmarcar foco (auditoría/diagnóstico/depuración) y activar a Xolo con perfil+intereses.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
+              <p class="step-instructions">Proyectar Diapositiva 2. Conecta el tema con valor profesional (diagnóstico de problemas, caza de bugs).</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Equipo: hoy nos convertimos en detectives del código. En la dirección de proyectos de IA, saber diagnosticar un problema es tan crucial como saber construir. Un bug no es solo un error técnico; es un obstáculo para la experiencia del usuario y la entrega de valor. Nuestra misión es cazar bugs con precisión quirúrgica, entendiendo su origen en la compleja interacción full-stack.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Activación con Xolo</h3>
+              <p class="step-instructions">Cada estudiante saluda a Xolo con perfil/intereses + misión y herramienta/marco requerido (ej. "diagnóstico", "DevTools", "caza de bugs").</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Activen a Xolo con su perfil e intereses. Confirmen que comprendieron el criterio de hoy y sigan sus indicaciones personalizadas. Por ejemplo: "Hola Xolo, soy [Nombre], perfil [X]; hoy me enfoco en diagnóstico de bugs. Necesito foco en DevTools Network."</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 2) “I Can” + Desafío -->
+      <section class="activity-card" id="activity-2">
+        <h2 class="activity-title">“I Can Statement” + Desafío</h2>
+        <p class="activity-purpose">Alinear expectativas y definir el reto práctico.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Presenta el reto</h3>
+              <p class="step-instructions">Proyectar Diapositiva 3. Describe el reto y la meta observable.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">El reto es identificar la causa raíz de un bug en una aplicación full-stack, determinando si el problema reside en el frontend o el backend, basándose en la evidencia de la comunicación API. El éxito se medirá por la capacidad de producir un 'Informe de Diagnóstico' conciso y preciso que apunte al origen del problema.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Escribe tu “I Can”</h3>
+              <p class="step-instructions">Proyectar Diapositiva 4. Cada estudiante redacta 1 “I Can” alineado al entregable.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Formula tu “Puedo…” en 1 frase: acción + criterio + resultado. Por ejemplo: "Puedo reproducir un bug en la interfaz de usuario y usar las DevTools para inspeccionar la comunicación de red." o "Puedo analizar las respuestas de la API y determinar si el error se origina en el frontend o el backend, justificando mi diagnóstico."</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3) AI GYM -->
+      <section class="activity-card" id="activity-3">
+        <h2 class="activity-title">AI GYM</h2>
+        <p class="activity-purpose">Formalizar el marco/técnica/herramienta central de la misión: Diagnóstico con DevTools Network.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Marco del día</h3>
+              <p class="step-instructions">Proyectar Diapositiva 5. Introduce el marco: Diagnóstico con la pestaña Network de DevTools.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">El marco de hoy es el 'Diagnóstico Full-Stack' utilizando la pestaña Network de las DevTools. Es fundamental porque muchos bugs que parecen de frontend son, en realidad, problemas en el backend que el frontend simplemente refleja. Un error común es intentar depurar el código del frontend sin antes verificar qué datos está recibiendo de la API. Siempre empiecen por la red. La clave es comparar la respuesta real de la API con lo que se espera.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Mini-demostración</h3>
+              <p class="step-instructions">Proyectar Diapositiva 6. Construye un ejemplo mínimo: un sistema simple con un bug donde la API devuelve un dato inesperado. Demuestra cómo reproducir el bug, abrir la pestaña Network, inspeccionar la petición y la respuesta de la API, y comparar con lo esperado para localizar el origen.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Observen cómo reproducimos el error, luego abrimos la pestaña Network. Fíjense en la petición y, crucialmente, en la respuesta. ¿Es la respuesta lo que esperábamos? Si no, el problema está en el backend. Si sí, el problema está en cómo el frontend maneja esa respuesta. ¿Sí o no, la respuesta de la API es la esperada?</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 3 — Check rápido</h3>
+              <p class="step-instructions">Proyectar Diapositiva 7. Verifica comprensión con 2 preguntas breves.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Pregunta 1: Si un componente de la UI no muestra datos, ¿cuál es el primer lugar donde deben buscar la causa del problema? (Respuesta: Pestaña Network de DevTools). Pregunta 2: Si la API devuelve un código de error 500, ¿dónde se originó el problema? (Respuesta: Backend).</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4) Brain Spark -->
+      <section class="activity-card" id="activity-4">
+        <h2 class="activity-title">Brain Spark</h2>
+        <p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto: un Informe de Diagnóstico preciso.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Producción</h3>
+              <p class="step-instructions">Proyectar Diapositiva 8. Acceso a la aplicación con el bug. Checklist: 1) Reproducir el bug en la UI. 2) Abrir DevTools y navegar a la pestaña Network. 3) Identificar la petición API relevante. 4) Inspeccionar la respuesta de la API. 5) Comparar la respuesta obtenida con la respuesta esperada para el funcionamiento correcto. 6) Redactar el 'Informe de Diagnóstico' de una sola oración.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">N/A</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Iteración</h3>
+              <p class="step-instructions">Proyectar Diapositiva 9. Pide una mejora concreta: "Añade una posible solución al bug, basándote en tu diagnóstico. ¿Sería un cambio en el frontend o en el backend?"</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Antes de cerrar: valida tu diagnóstico con la evidencia de la API. Si tu informe dice que el bug está en el backend, tu solución debe implicar un cambio en el backend. Si dice frontend, entonces en el frontend. Justifica tu propuesta de solución.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 3 — Evidencia</h3>
+              <p class="step-instructions">Proyectar Diapositiva 10. Solicita evidencia: el 'Informe de Diagnóstico' de una sola oración y, opcionalmente, una captura de pantalla de la pestaña Network mostrando la respuesta de la API que justifica el diagnóstico.</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Entrega tu 'Informe de Diagnóstico' con tu nombre. Incluye la oración de localización del bug y, si es posible, una captura de pantalla de la pestaña Network que muestre la respuesta de la API que te llevó a esa conclusión.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 5) GNIUS STORM -->
+      <section class="activity-card" id="activity-5">
+        <h2 class="activity-title">GNIUS STORM</h2>
+        <p class="activity-purpose">Exhibir resultados y cerrar con síntesis accionable.</p>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 1 — Showcase relámpago</h3>
+              <p class="step-instructions">2–3 personas/equipos muestran su 'Informe de Diagnóstico' y la evidencia en la pestaña Network, explicando cómo llegaron a esa conclusión (30–45 s c/u).</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Enfoca tu presentación en la frase de tu diagnóstico, la evidencia clave en la pestaña Network y cómo esa evidencia te permitió localizar el bug.</p>
+              </div>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-content">
+              <h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
+              <p class="step-instructions">Proyectar Diapositiva 11. Síntesis: 1 aprendizaje clave del marco (DevTools Network), 1 criterio que más impactó (comparar respuesta real vs. esperada), 1 siguiente paso aplicable (integrar diagnóstico en el flujo de desarrollo).</p>
+            </div>
+            <div class="collapsible">
+              <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+              <div class="collapsible-content">
+                <p class="dialogue assistant">Síntesis: Hoy aprendimos que el diagnóstico efectivo de bugs en sistemas full-stack requiere ir más allá de la interfaz, usando herramientas como la pestaña Network para entender la comunicación entre frontend y backend. El criterio que más impactó es la importancia de comparar la respuesta real de la API con lo que se espera para identificar el origen del problema. Como siguiente paso, integren siempre esta metodología de diagnóstico en sus flujos de desarrollo, antes de escribir una sola línea de código para un 'fix'.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
-
 </html>
